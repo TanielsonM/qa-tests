@@ -1,5 +1,6 @@
 # QA Tests Repository
 
+
 Repositório centralizado para testes de qualidade de software, organizando diferentes tipos de testes em uma estrutura modular e escalável.
 
 ## 📁 Estrutura do Repositório
