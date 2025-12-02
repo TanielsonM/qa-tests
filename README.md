@@ -12,18 +12,9 @@ qa-tests/
 │   ├── guia-de-boas-praticas.md  # Boas práticas de testes
 │   └── checklist.md          # Checklist de testes
 ├── e2e/                       # Testes End-to-End
-│   └── new-checkout/         # Projeto new-checkout (Playwright)
-├── api/                       # Testes de API
-│   ├── postman/              # Coleções Postman
-│   ├── bruno/                # Coleções Bruno
-│   └── integration-tests/    # Testes de integração
-├── performance/               # Testes de Performance
-│   ├── artillery/            # Testes Artillery
-│   ├── k6/                   # Testes k6
-│   └── reports/              # Relatórios de performance
-├── security/                  # Testes de Segurança
-│   └── zap/                  # OWASP ZAP
-└── .github/workflows/         # CI/CD Workflows
+│   ├── new-checkout/         # Projeto new-checkout (Playwright)
+│   └── greenn-adm/           # Projeto greenn-adm
+└── README.md                  # Este arquivo
 ```
 
 ## 🚀 Início Rápido
@@ -31,6 +22,10 @@ qa-tests/
 ### Projetos E2E
 
 Cada projeto E2E possui sua própria configuração independente. Cada diretório dentro de `e2e/` representa um projeto de testes separado.
+
+**Projetos disponíveis:**
+- `new-checkout` - Testes E2E com Playwright
+- `greenn-adm` - Projeto em configuração
 
 #### Exemplo: Projeto new-checkout
 
@@ -85,13 +80,9 @@ Consulte a pasta `/docs` para mais informações:
 
 ## 🔄 CI/CD
 
-Os workflows do GitHub Actions estão configurados para:
+Os workflows do GitHub Actions podem ser configurados na pasta `.github/workflows/` para execução automática dos testes em PRs e pushes.
 
-- **E2E Tests** - Executa testes end-to-end automaticamente em PRs e pushes
-- **API Tests** - Executa testes de API
-- **Performance Tests** - Executa testes de performance (agendado e manual)
-
-Os relatórios e resultados dos testes são disponibilizados como artifacts nos workflows.
+*Nota: Os workflows podem ser adicionados conforme necessário para cada projeto.*
 
 ## 📝 Contribuindo
 
