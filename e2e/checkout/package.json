@@ -1,7 +1,7 @@
 {
-  "name": "new-checkout-e2e",
+  "name": "checkout-e2e",
   "version": "1.0.0",
-  "description": "E2E tests for new-checkout with Playwright",
+  "description": "E2E tests for checkout and payments",
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --ui",
@@ -13,4 +13,3 @@
     "@playwright/test": "^1.40.0"
   }
 }
-

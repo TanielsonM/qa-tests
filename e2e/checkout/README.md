@@ -1,12 +1,12 @@
-# New Checkout - E2E Tests
+# Checkout E2E Tests
 
-Testes end-to-end para o projeto New Checkout utilizando Playwright.
+Testes end-to-end para checkout e pagamentos.
 
 ## Instalação
 
 ```bash
 npm install
-npx playwright install
+npx playwright install --with-deps chromium
 ```
 
 ## Executar Testes
@@ -31,10 +31,15 @@ npm run test:report
 ## Estrutura
 
 ```
-new-checkout/
+checkout/
 ├── tests/              # Casos de teste
+├── fixtures/           # Dados de teste
 ├── playwright.config.ts # Configuração do Playwright
 ├── package.json        # Dependências
 └── README.md          # Este arquivo
 ```
+
+## Helpers Compartilhados
+
+Helpers reutilizáveis estão disponíveis em `e2e/shared/helpers/`.
 
