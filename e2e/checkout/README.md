@@ -1,3 +1,23 @@
+Playwright + TypeScript
+
+
+Passo 01 - Limpar os produtos de STG - Tanielson + Lucas
+
+Passo 02 - Criar a pasta Data - Tanielson
+    1 - Arquivo para dados pessoais
+    1 - Arquivo para dados cartão
+    1 - Arquivos para dados do produto
+
+Passo 03 - Criar os testes - ( Pagamentos ) - Tanielson + Lucas
+Pix - Transaction + Subscription - Tanielson + Lucas 
+Boleto - Transaction + Subscription - Tanielson + Lucas
+Cartão - Transaction + Subscription - Tanielson + Lucas
+
+Passo 04 - Criar os relatorios - Lucas
+
+
+
+
 # Checkout E2E Tests
 
 Testes end-to-end para checkout e pagamentos.
