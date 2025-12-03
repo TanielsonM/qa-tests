@@ -1,6 +1,6 @@
 # PDF Reporter
 
-Gerador de relatórios PDF modernos para testes Playwright com tema escuro.
+Gerador de relatórios PDF modernos para testes Playwright com tema escuro. 
 
 ## 📋 Descrição
 
