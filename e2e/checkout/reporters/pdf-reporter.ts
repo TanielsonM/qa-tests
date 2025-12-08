@@ -63,7 +63,7 @@ class PDFReporter implements Reporter {
         };
 
         // Create output directory
-        const outputDir = path.join(process.cwd(), 'e2e/checkout/test-reports');
+        const outputDir = path.resolve(__dirname, '../test-reports');
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
         }
