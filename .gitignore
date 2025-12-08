@@ -4,9 +4,10 @@ package-lock.json
 yarn.lock
 
 # Test results and reports
-/test-results/
-/playwright-report/
-/playwright/.cache/
+test-results/
+playwright-report/
+test-reports/
+playwright/.cache/
 *.log
 
 # Environment variables

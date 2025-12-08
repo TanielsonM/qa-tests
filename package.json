@@ -1,0 +1,12 @@
+{
+  "name": "qa-tests-monorepo",
+  "private": true,
+  "workspaces": [
+    "api",
+    "e2e/checkout",
+    "e2e/shared"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces"
+  }
+}
