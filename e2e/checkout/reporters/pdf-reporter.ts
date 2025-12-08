@@ -92,7 +92,8 @@ class PDFReporter implements Reporter {
         // Wait for PDF to be written
         await new Promise<void>((resolve) => {
             doc.on('finish', () => {
-                console.log(`✅ PDF report generated: ${outputPath}\n`);
+                console.log(`\n✅ PDF report generated successfully!`);
+                console.log(`📂 Location: ${outputPath}\n`);
                 console.log(`📈 Summary:`);
                 console.log(`   Total: ${summary.total}`);
                 console.log(`   ✓ Passed: ${summary.passed}`);

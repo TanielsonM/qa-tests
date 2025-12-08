@@ -3,10 +3,19 @@
   "private": true,
   "workspaces": [
     "api",
-    "e2e/checkout",
     "e2e/shared"
   ],
   "scripts": {
-    "test": "npm test --workspaces"
+    "test": "npm test --workspaces",
+    "checkout:test": "playwright test -c e2e/checkout/playwright.config.ts",
+    "checkout:ui": "playwright test -c e2e/checkout/playwright.config.ts --ui",
+    "checkout:headed": "playwright test -c e2e/checkout/playwright.config.ts --headed",
+    "checkout:debug": "playwright test -c e2e/checkout/playwright.config.ts --debug",
+    "checkout:report": "playwright show-report e2e/checkout/test-reports"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/pdfkit": "^0.13.0",
+    "pdfkit": "^0.15.0"
   }
 }
