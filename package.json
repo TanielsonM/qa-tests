@@ -11,7 +11,7 @@
     "checkout:ui": "playwright test -c e2e/checkout/playwright.config.ts --ui",
     "checkout:headed": "playwright test -c e2e/checkout/playwright.config.ts --headed",
     "checkout:debug": "playwright test -c e2e/checkout/playwright.config.ts --debug",
-    "checkout:report": "playwright show-report e2e/checkout/test-reports"
+    "checkout:report": "playwright show-report e2e/checkout/test-reports/html"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.0",

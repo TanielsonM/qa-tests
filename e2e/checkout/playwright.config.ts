@@ -10,7 +10,7 @@ const config: PlaywrightTestConfig = {
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   reporter: [
-    ['html'],
+    ['html', { outputFolder: 'test-reports/html' }],
     ['./reporters/pdf-reporter.ts']
   ],
   use: {
